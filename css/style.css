@@ -19,8 +19,6 @@
     list-style-type: none;
   }
   
-  
-  
   /*UTILITIES*/
   
   .container{
@@ -44,10 +42,10 @@
     width: 100%;
   }
   
-  
   .align-center{
     align-items: center;
   }
+
   .justify-space-between{
     justify-content: space-between;
   }
@@ -69,6 +67,18 @@
   
   .menu ul{
     display: none;
+  }
+
+  .menu li{
+    padding: 0 15px;
+  }
+
+  .menu button{
+    color: #333333;
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
   }
   
   header .fa-bars,
@@ -173,13 +183,17 @@
   }
 
   .second-card-enter p{
-    padding: 20px 0;
+    padding: 20px;
+    line-height: 1.5;
   }
 
-  .second-card-enter span{
-    border-radius: 30px;
+  .second-card-enter button{
+    border-radius: 50%;
     background-color: #9792e4;
-    font-size: 20px;
+    font-size: 15px;
+    border: none;
+    padding: 20px;
+    margin: 20px 0;
   }
 
 
@@ -192,9 +206,8 @@
   .text-person h2{
     color: #9792e4;
     padding: 20px 0;
+    font-size: 35px
   }
-
-
 
   .photo-person-circle{
     background-color: #9792e4;
@@ -212,9 +225,125 @@
   }
 
   .photo-person-circle p{
+    padding: 20px;
+    line-height: 1.5;
+  }
+
+  /*BENEFIT*/
+
+  .simple h2{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
     padding: 20px 0;
   }
 
+  .numbers{
+    background-color: #fff;
+    color: #9792e4;
+    border-radius: 25px;
+    text-align: left;
+    padding: 25px 20px;
+    margin: 20px 0;
+  }
+
+  .purple-but{
+    background-color: #9792e4;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 30px;
+    border: none;
+  }
+
+  .first-numb{
+    font-size: 40px;
+    padding: 20px 0;
+  }
+
+  .numbers h3{
+    font-size: 25px;
+    padding: 20px 0;
+  }
+
+  .numbers p{
+    padding: 20px 0;
+  }
+
+  /*ABOUT-US*/
+
+  .us img{
+    border-radius: 50%;
+    height: 171px;
+    width: 191px;
+  }
+
+  .us h2{
+    font-size: 40px;
+    color: #9792e4;
+    padding: 20px 0;
+  }
+
+  .us p{
+    padding: 25px 0;
+    line-height: 2;
+  }
+
+  .us h3{
+    color: #9792e4;
+    font-size: 25px;
+    padding: 20px 0;
+    line-height: 1.5;
+  }
+
+  .quote-left{
+    position: relative;
+  }
+
+  .us i{
+    position: absolute;
+    color: #9792e4;
+    font-size: 40px;
+  }
+
+  /*FREE*/
+
+  .final{
+    text-align: center;
+    color: #fff;
+  }
+
+  .final h2{
+    color:orange;
+    font-size: 50px;
+    padding: 20px 0;
+  }
+
+  .final h4{
+    color: lightgray;
+    padding: 20px 0;
+  }
+
+  .final h3{
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .final p{
+    padding: 20px 0;
+    line-height: 1.5;
+    vertical-align: middle;
+  }
+
+  .final button{
+    background-color: #fff;
+    color: #9792e4;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 70px;
+    font-size: 15px;
+  }
+
+  
 
 
 
@@ -281,28 +410,3 @@
     }
   
   }
-  
-  
-  
-  
-  
-  
-  /***** debug *****/
-  
-  .debug section{
-    min-height: 500px;
-  }
-  
-  .debug footer {
-    min-height: 160px;
-  }
-  
-  /*
-  .debug .column{
-    min-height: 350px;
-    border: 1px dashed red;
-  }
-  
-  .debug .card{
-    height: 100%;
-  }  */
