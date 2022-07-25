@@ -1,4 +1,4 @@
-/***** generics *****/
+/*GENERICS*/
 
 * {
     box-sizing: border-box;
@@ -7,7 +7,8 @@
   }
   
   body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif; 
   }
   
   img{
@@ -20,7 +21,7 @@
   
   
   
-  /***** utilities *****/
+  /*UTILITIES*/
   
   .container{
     width: 100%;
@@ -28,7 +29,7 @@
   }
   
   
-  /** flex **/
+  /*FLEX*/
   .flex{
     display: flex;
   }
@@ -50,28 +51,9 @@
   .justify-space-between{
     justify-content: space-between;
   }
-  
-  /** /flex **/
-  
-  /*** shared ***/
-  
-  .card{
-    border-radius: 25px;
-    text-align:center;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-  
-  .card.text-left{
-    text-align:left;
-  }
-  
-  
-  /*** /shared ***/
-  
-  /***** content *****/
+    
+
+  /*HEADER*/
   
   header{
     position: fixed;
@@ -94,12 +76,14 @@
     vertical-align: middle;
   }
   
-  
+  /*MAIN*/
+
   main{
     padding-top: 80px;
   }
   
-  
+  /*SECTION*/
+
   section{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -110,23 +94,155 @@
   }
   
   
-  /* product-presentation */
+  /* PRODUCT-PRESENTATION */
   #product-presentation .card{
     background-color: #b5ddff;
   }
   #product-presentation .column:first-child .card {
     padding-bottom: 0;
   }
+
+  .card{
+    border-radius: 25px;
+    text-align:center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
   
-  /* /product-presentation */
+  .card.text-left{
+    text-align:left;
+  }
+
+  .card h3{
+    color: #0084fd;
+  }
+
+  #apple-blu{
+    background-color: #0084fd;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 30%;
+    align-self: center;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  #blue{
+    color: #fff;
+    font-size: 15px;
+  }
+
+  .card i{
+    font-size: 60px;
+    color: #0084fd;
+  }
+
+  .card p{
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 0;
+    color: lightslategray;
+  }
+
+  /*FEMALE-MALE*/
+  .second-card{
+    color: #fff;
+  }
+
+  .second-card h2{
+    padding: 20px 0;
+  }
+
+  .second-card p{
+    padding: 20px 0;
+  }
+
+
+  .second-card-enter{
+    background-color: #fff;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .second-card-enter h2{
+    padding: 20px 0;
+  }
+
+  .second-card-enter p{
+    padding: 20px 0;
+  }
+
+  .second-card-enter span{
+    border-radius: 30px;
+    background-color: #9792e4;
+    font-size: 20px;
+  }
+
+
+  /*PERSON*/
+
+  .text-person{
+    text-align: center;
+  }
   
+  .text-person h2{
+    color: #9792e4;
+    padding: 20px 0;
+  }
+
+
+
+  .photo-person-circle{
+    background-color: #9792e4;
+    padding: 20px 0;
+    border-radius: 25px;
+    margin: 20px 0;
+    text-align: center;
+    color:#fff;
+  }
+
+  .photo-person-circle img{
+    border-radius: 50%;
+    height: 171px;
+    width: 191px;
+  }
+
+  .photo-person-circle p{
+    padding: 20px 0;
+  }
+
+
+
+
+
+  /*FOOTER*/
+
   footer{
     background-color: #333333;
   }
+
+  .ending{
+    color:#fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .ending a{
+    color: #9792e4;
+    text-decoration: none;
+  }
+  
+  .ending p{
+    padding: 20px 0;
+  }
   
   
-  
-  
+  /*MEDIA-SCREEN*/
+
   @media screen and (min-width: 768px){
   
     #product-presentation .column {
@@ -145,7 +261,7 @@
   
   }
   
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1000px) {
   
     .menu .fa-bars{
       display: none;
@@ -181,6 +297,7 @@
     min-height: 160px;
   }
   
+  /*
   .debug .column{
     min-height: 350px;
     border: 1px dashed red;
@@ -188,4 +305,4 @@
   
   .debug .card{
     height: 100%;
-  }
+  }  */
