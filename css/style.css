@@ -453,13 +453,29 @@
 
     #benefit .container{
        width: calc(100% / 3);
+       flex-direction: row;
+       display: flex;
+       flex-wrap: wrap;
     }
 
     #about-us .us{
         display: flex;
     }
 
+    section:nth-of-type(even){
+       margin: 0 -200px;
+      }
+
+      main{
+        margin: 0 200px;
+      }
    
-  
-  
+      #female-male .row{
+        width: 30%;
+        padding-top: 40px;
+      }
+
+      #female-male .container{
+        justify-content: center;
+      }
   }
