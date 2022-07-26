@@ -231,7 +231,7 @@
 
   /*BENEFIT*/
 
-  .simple h2{
+   #benefit h2{
     color: #fff;
     text-align: center;
     font-size: 40px;
@@ -451,12 +451,21 @@
         margin: 0 10px;
     }
 
-    #benefit .container{
-       width: calc(100% / 3);
-       flex-direction: row;
+    #benefit .column{
        display: flex;
        flex-wrap: wrap;
     }
+
+    #benefit .numbers{
+        width: calc(100% / 3 - 40px);
+        margin: 0 20px;
+    }
+
+    #benefit .numbers:first-child .first{
+        width: calc(100% / 3 * 2);
+    }
+
+
 
     #about-us .us{
         display: flex;
@@ -464,11 +473,11 @@
 
     section:nth-of-type(even){
        margin: 0 -200px;
-      }
+      }   
 
       main{
         margin: 0 200px;
-      }
+      } 
    
       #female-male .row{
         width: 30%;
@@ -477,5 +486,9 @@
 
       #female-male .container{
         justify-content: center;
+      }
+
+      .container{
+        margin: 0 auto;
       }
   }
