@@ -114,11 +114,11 @@
 
   .card{
     border-radius: 25px;
-    text-align:center;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     padding: 20px;
+    text-align: center;
   }
   
   .card.text-left{
@@ -133,11 +133,11 @@
     background-color: #0084fd;
     color: #fff;
     border-radius: 20px;
-    padding: 5px 10px;
-    width: 30%;
+    padding: 15px 10px;
+    width: 80%;
     align-self: center;
     border: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   #blue{
@@ -151,10 +151,9 @@
   }
 
   .card p{
-    text-align: center;
-    vertical-align: middle;
     padding: 20px 0;
     color: lightslategray;
+    line-height: 1.5;
   }
 
   /*FEMALE-MALE*/
@@ -220,8 +219,9 @@
 
   .photo-person-circle img{
     border-radius: 50%;
-    height: 171px;
-    width: 191px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
   }
 
   .photo-person-circle p{
@@ -273,8 +273,9 @@
 
   .us img{
     border-radius: 50%;
-    height: 171px;
-    width: 191px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
   }
 
   .us h2{
@@ -386,9 +387,29 @@
     #product-presentation img{
       width: 50%;
     }
+
+    .photo-person-circle{
+        display: flex;
+    }
+
+    .photo-person-circle img{
+        margin: 0 10px;
+    }
+
+    #benefit .container{
+        width: calc(100% / 2);
+     }
+ 
+     #about-us .us{
+         display: flex;
+     }
+ 
   
   
   }
+
+
+
   
   @media screen and (min-width: 1000px) {
   
@@ -408,5 +429,37 @@
     #product-presentation .column:first-child .card{
       flex-direction: row;
     }
+
+    #female-male .container{
+        display: flex;
+    }
+
+    .second-card img{
+        width: 60%;
+        padding-bottom: 50px;
+    }
+
+    .second-card-enter img{
+        width: 60%;
+    }
+
+    .photo-person-circle{
+        display: flex;
+    }
+
+    .photo-person-circle img{
+        margin: 0 10px;
+    }
+
+    #benefit .container{
+       width: calc(100% / 3);
+    }
+
+    #about-us .us{
+        display: flex;
+    }
+
+   
+  
   
   }
