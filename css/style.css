@@ -396,22 +396,27 @@
         margin: 0 10px;
     }
 
-    #benefit .container{
-        width: calc(100% / 2);
-     }
- 
      #about-us .us{
          display: flex;
      }
+
+     #benefit .column{
+        display: flex;
+        flex-wrap: wrap;
+     }
  
-  
+     #benefit .numbers{
+         width: calc(100% / 2 - 20px);
+         margin: 10px 10px;
+     }
+ 
   
   }
 
 
 
   
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1100px) {
   
     .menu .fa-bars{
       display: none;
@@ -457,15 +462,11 @@
     }
 
     #benefit .numbers{
-        width: calc(100% / 3 - 40px);
-        margin: 0 20px;
+        width: calc(100% / 3 - 20px);
+        margin: 10px 10px;
     }
-
-    #benefit .numbers:first-child .first{
-        width: calc(100% / 3 * 2);
+     
     }
-
-
 
     #about-us .us{
         display: flex;
